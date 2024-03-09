@@ -1,0 +1,55 @@
+﻿@model Prenotazione;
+
+@{
+    ViewData["Title"] = "Prenotazione";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Prenota</h1>
+
+    <form method="post" action="/Home/Conferma" >
+        <div class="form-group">
+            <label asp-for="Nome">Nome</label>
+            <input asp-for="Nome" type="text" id="txtNome" name="Nome"class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cognome">Cognome</label>
+            <input asp-for="Cognome" type="text" id="txtCognome" name="Cognome"class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" type="text" id="txtEmail" name="Email"class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="Data">Data</label>
+            <input asp-for="Data" class="form-control">
+        </div>
+        
+            <label asp-for="Sesso">Sesso</label>
+            <div>
+             <label>Maschio</label>
+             <input asp-for="Sesso" type="radio" name="Sesso" value="Maschio">
+             <label>Femmina</label>
+             <input asp-for="Sesso" type="radio" name="Sesso" value="Femmina">
+             <label>Altro</label>
+             <input asp-for="Sesso" type="radio" name="Sesso" value="Altro">
+        </div>
+        <label asp-for="Ruolo">Ruolo</label>
+        <div>
+            <label>Studente</label>
+             <input asp-for="Ruolo" type="radio" name="Ruolo" value="Studente">
+             <label>Lavoratore</label>
+             <input asp-for="Ruolo" type="radio" name="Ruolo" value="Lavoratore">
+             <label>Disoccupato</label>
+             <input asp-for="Ruolo" type="radio" name="Ruolo" value="Disoccupato">
+
+        </div>
+            
+        
+        <button type="submit" class="btn btn-primary">Prenota</button>
+    </form>
+    
+</div>
+
+

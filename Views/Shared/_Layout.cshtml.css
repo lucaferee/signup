@@ -1,0 +1,72 @@
+﻿/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+/* Navigation styles */
+nav {
+  background: #ffffff;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+}
+
+nav ul li a:hover {
+  background: #495057;
+}
+
+/* Main content styles */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+
